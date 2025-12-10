@@ -7,7 +7,7 @@ document.getElementById("sendRequest").addEventListener("click", async () => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ comments: [randomText] })
+            body: JSON.stringify({ texts: [randomText] })
         });
 
         const result = await response.json();
